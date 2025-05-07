@@ -79,8 +79,8 @@ python get_court.py
 `court.txt`裡面點的順序由上到下假設為(可以去`scoring_height_net.py`裡的`load_coordinates_from_file`改)：
 左上
 左下
-右上
 右下
+右上
 
 ### Step 4. 執行評估
 
