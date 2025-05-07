@@ -21,7 +21,7 @@ tracknet_results/
 
 ![image](https://hackmd.io/_uploads/SkPnnXckel.png)
 
-校正csv檔中要有多個螢幕坐標系和世界坐標系的點對
+校正csv檔中要有多個螢幕坐標系和世界坐標系的點對(至少要有網柱高那兩個點)
 
 注意這裡的csv檔名要和step 1.的csv檔名一一對應
 
@@ -76,7 +76,11 @@ python get_court.py
 | `--video`     | 用於操作標記的影片路徑       | `video.mp4`  |
 | `--output`    | 儲存球場角落座標的路徑       | `court.txt`  |
 
-
+`court.txt`裡面點的順序假設為(可以去`scoring_height_net.py`裡的`load_coordinates_from_file`改)：
+左上
+左下
+右下
+右上
 
 ### Step 4. 執行評估
 
