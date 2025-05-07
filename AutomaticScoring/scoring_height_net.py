@@ -192,8 +192,8 @@ def load_coordinates_from_file(filename):
     # Split the data by new lines to separate each coordinate
     lines = data_string.splitlines()
 
-    # Split each coordinate by ';' and convert to integers
-    coordinates = [tuple(map(int, line.split(';'))) for line in lines]
+    # Split each coordinate by ',' and convert to integers
+    coordinates = [tuple(map(int, line.split(','))) for line in lines]
 
     # Convert the list of tuples into a 2D NumPy array
     numpy_array = np.array(coordinates)
